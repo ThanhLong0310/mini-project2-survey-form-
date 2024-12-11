@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <title> Survey Form</title>
+  </header>
+  <body>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action='https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a'>
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="99" placeholder="Age" /  ></label>
+        <label> Which option best describes you
+          <select id="dropdown">
+            <option value="">Talkative</option>
+            <option value="1">Good looing</option>
+            <option value="2">Fiendly</option>
+            <option value="3">Honest</option>
+            <option value="4">Creative</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Would you recommend this form to a friend?</label>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Definitely</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> Maybe</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label> What is your favorite  food ?
+          <select id="dropdown2">
+            <option value="">apple</option>
+            <option value="1">noodle</option>
+            <option value="2">chicken</option>
+            <option value="3">fish</option>
+            <option value="4">cake</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>what do you do in your free time? <small></small> </label>
+        <label><input type="checkbox" class="inline" value="front-end-projects" /> Gym</label>
+        <label><input type="checkbox" class="inline" value="back-end-projects" /> Playing video game</label>
+        <label><input type="checkbox" class="inline" value="data-visualization" /> Fishing</label>
+        <label><input type="checkbox" class="inline" value="challenges" /> watching film</label>
+        <label><input type="checkbox" class="inline" value="open-source-community" /> Chating with your friend </label>
+        <label><input type="checkbox" class="inline" value="gitter-help-rooms" />making friends</label>
+        <label><input type="checkbox" class="inline" value="videos" /> Videos</label>
+        <label><input type="checkbox" class="inline" value="city-meetups" /> cleaning your room</label>
+        <label><input type="checkbox" class="inline" value="wiki" /> learning new languages</label>
+        <label><input type="checkbox" class="inline" value="forum" /> Sleeping</label>
+        <label><input type="checkbox" class="inline" value="additional-courses" /> Do nothing</label>
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions?
+          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
